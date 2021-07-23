@@ -1,0 +1,240 @@
+#container{
+    background-color: #280428;
+    margin: 0;
+    width: 40vw;
+    /*make it fit its contents*/
+    flex: auto;
+    /*centre*/
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%) translateX(50%);
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    display: inline-block;
+    right: 50%;
+}
+
+/*w3Schools*/
+body {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+input{
+    width:90%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email]  {
+    /*width: 100%;*/
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus, [type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*input[type=email]:invalid{*/
+/*    */
+/*}*/
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 0;*/
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    /*align centre*/
+    margin: auto;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+input[type=submit]:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+/*.cancelbtn {*/
+/*    padding: 14px 20px;*/
+/*    background-color: #f44336;*/
+/*}*/
+
+/*!* Float cancel and signup buttons and add an equal width *!*/
+/*.cancelbtn, .signupbtn {*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*}*/
+
+/*!* Add padding to container elements *!*/
+/*.container {*/
+/*    padding: 16px;*/
+/*}*/
+
+/*!* Clear floats *!*/
+/*.clearfix::after {*/
+/*    content: "";*/
+/*    clear: both;*/
+/*    display: table;*/
+/*}*/
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+
+
+/*FRAMEWORK*/
+
+html, body
+{
+    background: url("../img/redSunset.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font: 24px bold;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    /*font-family: "Lucida Sans", monospace;*/
+    margin: 0 0 0 0;
+}
+
+nav
+{
+    height: 5vh;
+}
+
+main
+{
+    height: 90vh;
+}
+
+footer{
+    height: 4vh;
+    background-color: #280428;
+    font-size: 15px;
+    color: #F868A3;
+    padding-top: 1vh;
+    opacity: 75%;
+}
+
+ul {
+    list-style-type: none;
+    display: table;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BF2762;
+    /*border-radius: 25px;*/
+}
+
+li {
+    display: inline-block;
+    float: right;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li:first-child {
+    float: left;
+}
+
+
+/*  navbar text settings  */
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    word-spacing: 3px;
+    font-size: 24px;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+    padding: 10px 24px;
+    text-decoration: none;
+    border-style: none;
+    transition: all 0.5s ease;
+
+}
+
+li a:hover:not(.active) {
+    color:  #F868A3;
+    /*background-color: #F868A3;*/
+
+}
+
+.active {
+    color: #F868A3;
+    background-color: #280428;
+}
+
+/*Animations*/
+/*@keyframes shiver{*/
+/*    0%{*/
+/*        margin-right: 0px;*/
+/*        margin-bottom: 0px;*/
+/*    }*/
+/*    50%{*/
+/*        margin-right: 10px;*/
+/*        margin-bottom: 5px;*/
+/*    }*/
+
+
+/*    100%{*/
+/*        margin-right: 0px;*/
+/*        margin-bottom: 0px;*/
+/*    }*/
+/*}*/
+
+/*img{*/
+/*    animation: shiver 0.5s infinite;*/
+/*}*/
+
+#register, #login{
+    background-color: #280428;
+    color: #8969e0;
+}
+
+h1{
+    font-family: brushfont, helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+/*//framework*/
+@font-face {
+    font-family: brushfont;
+    src: url("../fonts/Fontrue.ttf");
+}

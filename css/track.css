@@ -1,0 +1,128 @@
+#au, #message{
+    margin-left: 41vw;
+    display: block;
+    position: fixed;
+    margin-top: 35vh;
+
+}
+
+
+
+/*FRAMEWORK*/
+
+html, body
+{
+    background: url("../img/redSunset.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font: 24px bold;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    /*font-family: "Lucida Sans", monospace;*/
+    margin: 0 0 0 0;
+}
+
+nav
+{
+    height: 5vh;
+}
+
+main
+{
+    height: 90vh;
+}
+
+footer{
+    height: 4vh;
+    background-color: #280428;
+    font-size: 15px;
+    color: #F868A3;
+    padding-top: 1vh;
+    opacity: 75%;
+}
+
+ul {
+    list-style-type: none;
+    display: table;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BF2762;
+    /*border-radius: 25px;*/
+}
+
+li {
+    display: inline-block;
+    float: right;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li:first-child {
+    float: left;
+}
+
+
+/*  navbar text settings  */
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    word-spacing: 3px;
+    font-size: 24px;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+    padding: 10px 24px;
+    text-decoration: none;
+    border-style: none;
+    transition: all 0.5s ease;
+
+}
+
+li a:hover:not(.active) {
+    color:  #F868A3;
+    /*background-color: #F868A3;*/
+
+}
+
+.active {
+    color: #F868A3;
+    background-color: #280428;
+}
+
+            /*Animations*/
+@keyframes shiver{
+     0%{
+            margin-right: 0px;
+         margin-bottom: 0px;
+     }
+    50%{
+            margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+
+    100%{
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+img{
+    animation: shiver 0.5s infinite;
+}
+
+#register, #login{
+    background-color: #280428;
+    color: #8969e0;
+}

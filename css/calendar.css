@@ -1,0 +1,229 @@
+/* [PERIOD SELECTOR] */
+#cal-date {
+  margin: 10px 0;
+}
+#cal-mth, #cal-yr, #cal-set, #cal-prev, #cal-next, #cal-today {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 0;
+  background: #ffb700;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#cal-prev, #cal-today {
+  margin-left: 30px;
+}
+
+/* [CALENDAR] */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ffc42e;
+  padding: 15px;
+  text-align: center;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+#calendar tr.day td:hover {
+  background: #fff9e4;
+}
+#calendar tr td.blank {
+  background: #f5f5f5;
+}
+#calendar .dd {
+  font-size: 1em;
+  color: #999;
+}
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.6em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ffb700;
+}
+
+/* [ADD/EDIT EVENT] */
+#cal-event form {
+  padding: 5px;
+  margin-top: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+#cal-event h1 {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+#evt-date {
+  color: #999;
+  margin: 10px 0;
+}
+#cal-event textarea {
+  display: block;
+  /*box-sizing: padding-box;*/
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  resize: none;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  border: 0;
+  background: #ff9900;
+  color: #fff;
+}
+
+/* [DOES NOT MATTER] */
+textarea, input{
+  font-family: helvetica, sans-serif;
+}
+#page-body{
+  max-width: 1000px;
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  /*-webkit-transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  font-family: brushfont, helvetica, sans-serif;
+}
+
+/*//framework*/
+@font-face {
+  font-family: brushfont;
+  src: url("../fonts/Fontrue.ttf");
+}
+
+#cover{
+  background-color: white;
+  height: inherit;
+}
+
+html, body
+{
+  background: white;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100vw;
+  text-align: center;
+  color: ghostwhite;
+  font: 24px bold;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  /*font-family: "Lucida Sans", monospace;*/
+  margin: 0 0 0 0;
+
+
+  height: 100%;
+  min-height: 100%;
+}
+
+nav
+{
+  height: 6vh;
+  margin: 0 0 0 0;
+  flex: none;
+}
+
+body {
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main
+{
+  text-align: center;
+  flex: auto;
+
+  /*overflow-y: scroll;*/
+}
+
+footer{
+  height: 4vh;
+  background-color: #751100;
+  font-size: 15px;
+  color: #ff9340;
+  padding-top: 1vh;
+  opacity: 75%;
+}
+
+ul {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  height: 5vh;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  background-color: #ff8000;
+  /*border-radius: 25px;*/
+  transition: all 0.5s ease;
+}
+
+li {
+  /* float: right; */
+  display: inline-block;
+  float: right;
+  /*border-right:1px solid black;*/
+  /*margin-left: 5px;*/
+  /*margin-right: 5px;*/
+
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li:first-child {
+  float: left;
+}
+
+
+/*  navbar text settings  */
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  word-spacing: 3px;
+  font-size: 24px;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  /*text-transform: uppercase;*/
+  padding: 10px 24px;
+  text-decoration: none;
+  border-style: none;
+  transition: all 0.5s ease;
+
+}
+
+
+li a:hover:not(.active) {
+  color:  #ff9340;
+  /*background-color: #F868A3;*/
+
+}
+
+.active {
+  color: #ff9340;
+  background-color: #751100;
+}
+
+#register, #login{
+  background-color: #280428;
+  color: #8969e0;
+}

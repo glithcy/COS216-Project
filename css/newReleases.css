@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: brushfont;
+  src: url("../fonts/Fontrue.ttf");
+}
+
+h1{
+  font-size: 44px;
+  font-family: brushfont;
+  text-align: center;
+  color: white;
+}
+
+img{
+  border: 3px solid #280428; /*You have to put the type of border as well as the width and colour*/
+  border-radius: 20px;
+  box-shadow: 3px 0px 14px 0px darkslategrey;
+}
+
+p{
+  font-size: 18px;
+  /*font-weight: bold;*/
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  color: black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top:0;
+  margin-top: 0;
+}
+
+h2{
+  font-size: 14px;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  color: black;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top:0;
+  margin-top: 0;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 40px;
+  position: relative;
+  text-align: center;
+  min-height: 700px;
+  max-height: 700px;
+}
+
+#submit
+{
+  float: left;
+  width: 25%;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.column .text{
+  width:100%;
+  /*position: absolute;*/
+
+}
+
+div:hover #submit{
+  background-color: transparent;
+}
+
+div.column:hover {
+  background-color: #8969e0;
+}
+
+.column:hover .text{
+  color: black;
+  position: relative;
+}
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.active {
+  color: #8969e0;
+  background-color: #280428;
+}
+
+
+
+
+input[type=button]:hover
+{
+  background-color: #8969e0;
+}
+
+
+input{
+  border: none;
+  height: 4vh;
+  color: #280428;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  /*float: left;*/
+  padding: 10px;
+  box-shadow: 3px 0 14px 0 darkslategrey;
+}
+
+.search{
+  fill: #8969e0;
+  width: 3vw;
+}
+
+
+
+/*TOOLTIP*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /*width: 200px;*/
+  background-color: black;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+
+
+
+/*FRAMEWORK*/
+#cover{
+  background-color: white;
+  height: inherit;
+  flex: auto;
+}
+
+html, body
+{
+  background: linear-gradient(0deg, white 0%, #78069e 50%);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font: 24px bold;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  /*font-family: "Lucida Sans", monospace;*/
+  margin: 0 0 0 0;
+
+  height: 100%;
+  min-height: 100%;
+}
+
+nav
+{
+  height: 6vh;
+  margin: 0 0 0 0;
+  flex: none;
+}
+
+main
+{
+  text-align: center;
+  flex: auto;
+}
+
+body {
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  height: 4vh;
+  background-color: #280428;
+  font-size: 15px;
+  color: #8969e0;
+  opacity: 75%;
+  flex: none;
+  padding-top: 5px;
+}
+
+ul {
+  list-style-type: none;
+  display: table;
+  width: 100%;
+  height: 5vh;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  background-color: #78069e;
+  /*border-radius: 25px;*/
+  transition: all 0.5s ease;
+}
+
+li {
+  /* float: right; */
+  display: inline-block;
+  float: right;
+  /*border-right:1px solid black;*/
+  /*margin-left: 5px;*/
+  /*margin-right: 5px;*/
+
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li:first-child {
+  float: left;
+}
+
+
+/*  navbar text settings  */
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  word-spacing: 3px;
+  font-size: 24px;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  /*text-transform: uppercase;*/
+  padding: 10px 24px;
+  text-decoration: none;
+  border-style: none;
+  transition: all 0.5s ease;
+
+}
+
+
+li a:hover:not(.active) {
+  color:  #8969e0;
+  /*background-color: #F868A3;*/
+
+}
+
+.active {
+  color: #8969e0;
+  background-color: #280428;
+}
+
+#register, #login{
+  background-color: #280428;
+  color: #8969e0;
+}
